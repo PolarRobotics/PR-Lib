@@ -44,7 +44,8 @@ int Lights::returnStatus()
 
 ## Pairing Details:
 Used for pairing the PS5 controllers to the robots  
-The main functions to use are listed below **(Read the actual code for more details if needed)**
+The main functions to use are listed below **(Read the actual code for more details if needed)**  
+*Before pairing can be initialized the LED object must be created so that it can be passed in*
 ```
-void activatePairing(bool doRePair, int discoverTime)
+void activatePairing(Lights robotled, bool doRePair, int discoverTime)
 ```
