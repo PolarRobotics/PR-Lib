@@ -1,0 +1,21 @@
+{
+    "name": "PR-Lib",
+    "version": "1.0.0",
+    "description": "ONU polar robotics libary for ESP32 codebase",
+    "keywords": "robotics",
+    "repository":
+    {
+      "type": "git",
+      "url": "https://github.com/PolarRobotics/PR-Lib.git"
+    },
+    "authors":
+    [
+      {
+        "name": "Rhys Davies",
+        "email": "r-davies.1@onu.edu"
+      }
+    ],
+    "license": "MIT",
+    "frameworks": "Arduino",
+    "platforms": "espressif32"
+  }
