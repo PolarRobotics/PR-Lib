@@ -1,7 +1,7 @@
 #pragma once
 
-#ifndef __MOTOR_CONTROL__
-#define __MOTOR_CONTROL__
+#ifndef __MOTOR_INTERFACE__
+#define __MOTOR_INTERFACE__
 
 #include <Arduino.h>
 
@@ -20,18 +20,16 @@ const int PWM_MAXDUTY = (1 << PWM_RES) - 1;
 #define PWM_FREQ 1/PWM_PERIOD
 // #define PWM_FREQ 1000000 / PWM_PERIOD_US
 
-// class MotorControl;
-
 typedef struct servo {
     uint8_t pin;
     // bool isactive;
     uint8_t channel;
 } servo_t;
 
-static servo_t servos[MAX_NUM_MOTORS];
-static uint8_t ServoCount = 0;
+static servo_t motors[MAX_NUM_MOTORS];
+static uint8_t MotorCount = 0;
 
-class MotorControl {
+class MotorInterface {
 private:
     uint8_t motorIndex;  // index into the channel data for this servo
     int8_t min;          // minimum is this value times 4 added to MIN_PULSE_WIDTH    
@@ -39,7 +37,7 @@ private:
     uint32_t tempTimeon;
     uint16_t power2Duty(float power);
 public:
-    MotorControl();
+    MotorInterface();
     uint8_t attach(int pin);           
     uint8_t attach(int pin, int min, int max); // as above but also sets min and max values for writes. 
     void write(float pwr);
