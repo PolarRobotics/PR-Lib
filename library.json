@@ -1,6 +1,6 @@
 {
     "name": "PR-Lib",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "ONU polar robotics libary for ESP32 codebase",
     "keywords": "robotics",
     "repository":
