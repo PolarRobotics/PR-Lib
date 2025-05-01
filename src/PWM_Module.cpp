@@ -1,5 +1,5 @@
 #include <Arduino.h>
-#include <Robot/PWM_Module.h>
+#include <PWM_Module.h>
 
 // Define the pwm_test_module variable
 // Adafruit_PWMServoDriver pwm_test_module = Adafruit_PWMServoDriver(PWM_ADDRESS);

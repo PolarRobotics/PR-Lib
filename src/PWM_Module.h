@@ -4,8 +4,8 @@
 #define __PWM_MODULE__
 
 #include <Arduino.h>
-#include <Adafruit_PWMServoDriver.h>
 #include <Wire.h>
+#include <Adafruit_PWMServoDriver.h>
 
 #define MAX_NUM_MOTORS 16
 
