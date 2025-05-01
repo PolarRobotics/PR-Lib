@@ -10,5 +10,8 @@
   },
   "license": "MIT",
   "frameworks": "Arduino",
-  "platforms": "espressif32"
+  "platforms": "espressif32",
+  "dependecies": {
+    "external-repo": "https://github.com/adafruit/Adafruit-PWM-Servo-Driver-Library#3.0.2"
+  }
 }
