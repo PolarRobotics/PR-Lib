@@ -1,0 +1,23 @@
+// menu "Polar Robotics Library Configuration"
+
+    // config PRLIB_ENABLE_DEBUG
+    //     bool "Enable debug output"
+    //     default n
+    //     help
+    //         Enable debug printf statements in PR-Lib
+
+    // config PRLIB_MAX_MOTORS
+    //     int "Maximum number of motors"
+    //     range 1 16
+    //     default 8
+    //     help
+    //         Maximum number of motors that can be controlled simultaneously
+
+    // config PRLIB_DEFAULT_PWM_FREQ
+    //     int "Default PWM frequency (Hz)"
+    //     range 1000 25000
+    //     default 5000
+    //     help
+    //         Default PWM frequency for motor control
+
+// endmenu
