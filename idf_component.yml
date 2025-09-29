@@ -1,9 +1,9 @@
 name: pr-lib
 version: "1.0.0"
 description: "Polar Robotics custom library for ESP32 robotics applications"
-url: https://github.com/YourOrg/PR-Lib
-repository: https://github.com/YourOrg/PR-Lib.git
-documentation: https://github.com/YourOrg/PR-Lib#readme
+url: https://github.com/PolarRobotics/PR-Lib
+repository: https://github.com/PolarRobotics/PR-Lib.git
+documentation: https://github.com/PolarRobotics/PR-Lib#readme
 
 dependencies:
   idf:
