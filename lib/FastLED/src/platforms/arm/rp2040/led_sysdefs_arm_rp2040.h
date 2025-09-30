@@ -1,9 +1,22 @@
 #ifndef __INC_LED_SYSDEFS_ARM_RP2040_H
 #define __INC_LED_SYSDEFS_ARM_RP2040_H
 
+
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wignored-qualifiers"
+#pragma GCC diagnostic ignored "-Wunused-variable"
+
 #include "hardware/sync.h"
 
-#define FASTLED_ARM
+// Explicitly include Arduino.h here so any framework-specific defines take
+// priority.
+#ifdef ARDUINO
+#include <Arduino.h> // ok include
+#endif
+
+#ifndef FASTLED_ARM
+#error "FASTLED_ARM must be defined before including this header. Ensure platforms/arm/is_arm.h is included first."
+#endif
 #define FASTLED_ARM_M0_PLUS
 
 // TODO: PORT SPI TO HW
@@ -66,6 +79,11 @@ typedef volatile uint32_t RwReg;
 #define FASTLED_RP2040_CLOCKLESS_IRQ_SHARED 1
 #endif
 
+// Default to disabling M0 assembly clockless implementation
+#ifndef FASTLED_RP2040_CLOCKLESS_M0_FALLBACK
+#define FASTLED_RP2040_CLOCKLESS_M0_FALLBACK 0
+#endif
+
 // SPI pin defs for old SDK ver
 #ifndef PICO_DEFAULT_SPI
 #define PICO_DEFAULT_SPI 0
@@ -83,8 +101,13 @@ typedef volatile uint32_t RwReg;
 #define PICO_DEFAULT_SPI_CSN_PIN 17
 #endif
 
+#if !defined(cli) && !defined(sei)
 static uint32_t saved_interrupt_status;
 #define cli() (saved_interrupt_status = save_and_disable_interrupts())
 #define sei() (restore_interrupts(saved_interrupt_status))
+#endif
+
+#pragma GCC diagnostic pop
+
 
 #endif // __INC_LED_SYSDEFS_ARM_RP2040_H

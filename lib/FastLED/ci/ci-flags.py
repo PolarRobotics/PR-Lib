@@ -1,3 +1,6 @@
-Import("env")
+# flake8: noqa
+# ruff: skip
 
-env.Append(CXXFLAGS=["-Wno-register"])
+Import("env")  # type: ignore
+
+env.Append(CXXFLAGS=["-Wno-register"])  # type: ignore

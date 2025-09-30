@@ -31,12 +31,12 @@ TProgmemPalette16	KEYWORD1
 TProgmemPalette32	KEYWORD1
 TDynamicRGBGradientPalette_byte	KEYWORD1
 TDynamicRGBGradientPalette_bytes	KEYWORD1
-TDynamicRGBGradientPalettePtr	KEYWORD1
+TDynamicRGBGradientPaletteRef	KEYWORD1
 TProgmemHSVPalette16	KEYWORD1
 TProgmemHSVPalette32	KEYWORD1
 TProgmemRGBGradientPalette_byte	KEYWORD1
 TProgmemRGBGradientPalette_bytes	KEYWORD1
-TProgmemRGBGradientPalettePtr	KEYWORD1
+TProgmemRGBGradientPaletteRef	KEYWORD1
 TProgmemRGBPalette16	KEYWORD1
 TProgmemRGBPalette32	KEYWORD1
 
@@ -131,7 +131,9 @@ map8	KEYWORD2
 ease8InOutQuad	KEYWORD2
 ease8InOutCubic	KEYWORD2
 ease8InOutApprox	KEYWORD2
-ease8InOutApprox	KEYWORD2
+ease16InOutQuad	KEYWORD2
+ease16InOutCubic	KEYWORD2
+ease16InOutApprox	KEYWORD2
 triwave8	KEYWORD2
 quadwave8	KEYWORD2
 cubicwave8	KEYWORD2
