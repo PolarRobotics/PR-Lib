@@ -1,5 +1,5 @@
 #include <Arduino.h>
-#include "MotorInterface.h"
+#include <MotorInterface.h>
 
 /**
  * @brief 
@@ -68,9 +68,8 @@ uint8_t MotorInterface::attach(int pin, int min, int max) {
         motors[this->motorIndex].channel = this->motorIndex; // set the servo ledc channel
         this->min = min; 
         this->max = max;
-        ledcSetup(this->motorIndex, PWM_FREQ, PWM_RES);
-        ledcAttachPin(pin, this->motorIndex);
-        ledcWrite(this->motorIndex, 0);
+        ledcAttachChannel(pin, PWM_FREQ, PWM_RES, this->motorIndex);
+        ledcWrite(pin, 0);
     }
     return this->motorIndex;
 }
