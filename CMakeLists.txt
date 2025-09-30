@@ -17,14 +17,21 @@ file(GLOB_RECURSE FASTLED_SRCS
     "lib/FastLED/src/*.c"
 )
 
+# Collect Adafruit LIS3MDL source files
+file(GLOB_RECURSE LIS3MDL_SRCS 
+    "lib/Adafruit LIS3MDL/*.cpp"
+    "lib/Adafruit LIS3MDL/*.c"
+)
+
 # Combine all sources
-set(ALL_SRCS ${PRLIB_SRCS} ${PS5_SRCS} ${FASTLED_SRCS})
+set(ALL_SRCS ${PRLIB_SRCS} ${PS5_SRCS} ${FASTLED_SRCS} ${LIS3MDL_SRCS})
 
 idf_component_register(
     SRCS ${ALL_SRCS}
     INCLUDE_DIRS "include" 
                  "lib/ps5-esp32-main/src"      # PS5 headers
                  "lib/FastLED/src"    # FastLED headers
+                 "lib/Adafruit LIS3MDL" # Adafruit LIS3MDL headers
     REQUIRES espressif__arduino-esp32
 )
 
