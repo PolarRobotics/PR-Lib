@@ -10,6 +10,7 @@
 #define MAX_PWM_US 2000
 #define MIN_PWM_US 1000
 
+//dsjkvhdiofuvj
 //PWM defines:
 #define PWM_RES 16 //channel resolution in bits, this is a really high resolution, can lower this if we have stability problems
 // #define PWM_MAXDUTY 65535    // (2^16) - 1
