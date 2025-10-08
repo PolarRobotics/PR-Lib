@@ -1,15 +1,11 @@
 name: adafruit-busio
 version: "*"
 description: "Adafruit Bus I/O Library"
-url: https://github.com/adafruit/Adafruit_BusIO
-repository: https://github.com/adafruit/Adafruit_BusIO.git
-documentation: https://github.com/adafruit/Adafruit_BusIO#readme
 
 dependencies:
   idf:
     version: ">=4.4.0"
   # If your component depends on Arduino
-  espressif/arduino-esp32: "^3.0.0"
 
 targets:
   - esp32

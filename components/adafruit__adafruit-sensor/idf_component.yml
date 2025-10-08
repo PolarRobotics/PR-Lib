@@ -1,15 +1,10 @@
 name: adafruit-sensor
 version: "*"
 description: "Adafruit Unified Sensor Library"
-url: https://github.com/adafruit/Adafruit_Sensor
-repository: https://github.com/adafruit/Adafruit_Sensor.git
-documentation: https://github.com/adafruit/Adafruit_Sensor#readme
-
 dependencies:
   idf:
     version: ">=4.4.0"
   # If your component depends on Arduino
-  espressif/arduino-esp32: "^3.0.0"
 
 targets:
   - esp32
