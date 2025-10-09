@@ -1,0 +1,5 @@
+name: usb-sabertooth
+version: "1.0.0"
+description: "USBSabertooth library in IDF component form"
+dependencies:
+  idf: ">=4.4.0"
