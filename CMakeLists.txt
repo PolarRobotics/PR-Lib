@@ -30,7 +30,7 @@ set(ALL_SRCS ${PRLIB_SRCS})
 idf_component_register(
     SRCS ${ALL_SRCS}
     INCLUDE_DIRS "include" 
-                "lib/USBSabertooth"
+                # "lib/USBSabertooth"
                 #  "lib/ps5-esp32-main/src"      # PS5 headers
                 #  "lib/FastLED/src"    # FastLED headers
                 #  "lib/Adafruit LIS3MDL" # Adafruit LIS3MDL headers
