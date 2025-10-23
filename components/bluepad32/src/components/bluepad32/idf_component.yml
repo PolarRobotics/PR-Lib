@@ -14,3 +14,20 @@ dependencies:
   #   # `public` flag doesn't have an effect dependencies of the `main` component.
   #   # All dependencies of `main` are public by default.
   #   public: true
+  # PR-Lib version of BTStack (required by Bluepad32)
+  btstack:
+    version: '*'
+    git: https://github.com/PolarRobotics/PR-Lib.git
+    path: components/bluepad32/external/btstack/port/esp32/components/btstack
+
+  # PR-Lib version of cmd_nvs (required by Bluepad32)
+  cmd_nvs:
+    version: '*'
+    git: https://github.com/PolarRobotics/PR-Lib.git
+    path: components/bluepad32/src/components/cmd_nvs
+
+  # PR-Lib version of cmd_system (required by Bluepad32)
+  cmd_system:
+    version: '*'
+    git: https://github.com/PolarRobotics/PR-Lib.git
+    path: components/bluepad32/src/components/cmd_system

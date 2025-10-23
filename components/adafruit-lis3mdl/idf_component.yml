@@ -6,6 +6,12 @@ dependencies:
   idf:
     version: ">=4.4.0"
   # If your component depends on Arduino
+  adafruit-sensor:
+    git: https://github.com/PolarRobotics/PR-Lib.git
+    path: components/adafruit-sensor
+  adafruit-busio:
+    git: https://github.com/PolarRobotics/PR-Lib.git
+    path: components/adafruit-busio
 
 targets:
   - esp32
