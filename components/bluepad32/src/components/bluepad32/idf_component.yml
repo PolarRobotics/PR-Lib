@@ -19,7 +19,8 @@ dependencies:
     version: '*'
     git: https://github.com/PolarRobotics/PR-Lib.git
     path: components/bluepad32/external/btstack
-
+    override_path: port/esp32/components/btstack
+    
   # PR-Lib version of cmd_nvs (required by Bluepad32)
   cmd_nvs:
     version: '*'
