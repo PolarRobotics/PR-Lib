@@ -1,0 +1,46 @@
+var group__wicedbt___channel_sounding =
+[
+    [ "WICED_BLE_CS_FAE_TABLE_SIZE", "group__wicedbt___channel_sounding.html#gaf113bf7f3b56b53c9b1dca83e9642913", null ],
+    [ "WICED_BLE_CS_CHANNEL_MAP_SIZE", "group__wicedbt___channel_sounding.html#gab0268ef345c918adc4e27e86416c6723", null ],
+    [ "wiced_ble_cs_role_t", "group__wicedbt___channel_sounding.html#gae69c22118ea25ee753ef3e08b63b182e", null ],
+    [ "wiced_ble_cs_fae_table_t", "group__wicedbt___channel_sounding.html#ga584a44054f58f0e9439fcc9e7d2dacbf", null ],
+    [ "wiced_ble_cs_channel_map_t", "group__wicedbt___channel_sounding.html#gad91f105900373c133572b529f952d7c9", null ],
+    [ "wiced_ble_cs_events_t", "group__wicedbt___channel_sounding.html#ga799ad3fb1671f4dfbbe83161175f93fe", null ],
+    [ "wiced_ble_cs_events_cb_t", "group__wicedbt___channel_sounding.html#gad43348f75307986af6c6cfb1275f99d6", null ],
+    [ "wiced_ble_cs_role_e", "group__wicedbt___channel_sounding.html#ga732374cb7d4bf1d0f47eb0e9c4039ea7", [
+      [ "WICED_BLE_CS_ROLE_INITIATOR", "group__wicedbt___channel_sounding.html#gga732374cb7d4bf1d0f47eb0e9c4039ea7acb2781266902b250fbf3b78e3d26522e", null ],
+      [ "WICED_BLE_CS_ROLE_REFLECTOR", "group__wicedbt___channel_sounding.html#gga732374cb7d4bf1d0f47eb0e9c4039ea7ad3bfa5a4ddd4360da37a602a0ef1df79", null ]
+    ] ],
+    [ "wiced_ble_cs_events_e", "group__wicedbt___channel_sounding.html#gae51b2cf135ccad014c56b4797eb2b606", [
+      [ "WICED_BLE_CS_READ_LOCAL_CAPABILITIES_COMPLETE", "group__wicedbt___channel_sounding.html#ggae51b2cf135ccad014c56b4797eb2b606a237d93729df7513b8f2c62b4320dc3a4", null ],
+      [ "WICED_BLE_CS_READ_REMOTE_CAPABILITIES_COMPLETE", "group__wicedbt___channel_sounding.html#ggae51b2cf135ccad014c56b4797eb2b606a65d3e013549c62512d639382ebec2c60", null ],
+      [ "WICED_BLE_CS_WRITE_CACHED_CAPABILITIES_CMD_COMPLETE", "group__wicedbt___channel_sounding.html#ggae51b2cf135ccad014c56b4797eb2b606a19261a5451ccea9c4b2a0289210d9c6f", null ],
+      [ "WICED_BLE_CS_WRITE_DEFAULT_SETTINGS_COMPLETE", "group__wicedbt___channel_sounding.html#ggae51b2cf135ccad014c56b4797eb2b606a75ae6ab42913c6e6950eb8449eada6b3", null ],
+      [ "WICED_BLE_CS_READ_REMOTE_FAE_TABLE_COMPLETE", "group__wicedbt___channel_sounding.html#ggae51b2cf135ccad014c56b4797eb2b606ab5ab928270dc3a0404a3d2c6cdea3bcd", null ],
+      [ "WICED_BLE_CS_WRITE_CACHED_REMOTE_FAE_TABLE_COMPLETE", "group__wicedbt___channel_sounding.html#ggae51b2cf135ccad014c56b4797eb2b606ab406a51fecd3c214e124dc2f3cd1a29a", null ],
+      [ "WICED_BLE_CS_SET_SECURITY_ENABLE_COMPLETE", "group__wicedbt___channel_sounding.html#ggae51b2cf135ccad014c56b4797eb2b606a9c3860f94309bd3c2b54d06d312c9733", null ],
+      [ "WICED_BLE_CS_CONFIG_COMPLETE", "group__wicedbt___channel_sounding.html#ggae51b2cf135ccad014c56b4797eb2b606ae5dbd4dd9c0e76432cf242ba2c66c9eb", null ],
+      [ "WICED_BLE_CS_SET_CHANNEL_CLASSIFICATION_COMPLETE", "group__wicedbt___channel_sounding.html#ggae51b2cf135ccad014c56b4797eb2b606a46ecc42c9761c8c4d644b9aacf82dc06", null ],
+      [ "WICED_BLE_CS_SET_PROCEDURE_PARAMS_CMD_COMPLETE", "group__wicedbt___channel_sounding.html#ggae51b2cf135ccad014c56b4797eb2b606a74423013eacb98ac80ea424b2f2c40d6", null ],
+      [ "WICED_BLE_CS_SET_PROCEDURE_ENABLE_CMD_COMPLETE", "group__wicedbt___channel_sounding.html#ggae51b2cf135ccad014c56b4797eb2b606a88b5633abc46e9ef672f5c3e0bd69523", null ],
+      [ "WICED_BLE_CS_PROCEDURE_ENABLE_EVT", "group__wicedbt___channel_sounding.html#ggae51b2cf135ccad014c56b4797eb2b606ae918e665a7ea8cab9aacc988cfa9fca2", null ],
+      [ "WICED_BLE_CS_SUBEVENT_RESULT_EVT", "group__wicedbt___channel_sounding.html#ggae51b2cf135ccad014c56b4797eb2b606aee6689c2858bece894b03f8b3fd6b731", null ],
+      [ "WICED_BLE_CS_SUBEVENT_RESULT_CONTINUE_EVT", "group__wicedbt___channel_sounding.html#ggae51b2cf135ccad014c56b4797eb2b606aeb34a3d0d0d19341efdacd9b559add3e", null ]
+    ] ],
+    [ "wiced_ble_cs_register", "group__wicedbt___channel_sounding.html#ga1a98846d8ef2e9afe62b7b70bc48f7b4", null ],
+    [ "wiced_ble_cs_read_local_supported_capabilities", "group__wicedbt___channel_sounding.html#gaa769c2308abe9cf96915fd59afcf9ef7", null ],
+    [ "wiced_ble_cs_read_remote_supported_capabilities", "group__wicedbt___channel_sounding.html#gaddacff9639d13b2fa86ca3593213ab7a", null ],
+    [ "wiced_ble_cs_write_cached_remote_capabilities", "group__wicedbt___channel_sounding.html#ga9b9c7812434fab48727a3978f1cd92df", null ],
+    [ "wiced_ble_cs_security_enable", "group__wicedbt___channel_sounding.html#ga7793e2930aba39fb1a80e59b8dbaa58e", null ],
+    [ "wiced_ble_cs_set_default_settings", "group__wicedbt___channel_sounding.html#ga53013ffc680f6bf37390c65bbeec621b", null ],
+    [ "wiced_ble_cs_read_remote_fae_table", "group__wicedbt___channel_sounding.html#ga6e7cca740ed2f8a5ef4ea59904977e9a", null ],
+    [ "wiced_ble_cs_write_cached_remote_fae_table", "group__wicedbt___channel_sounding.html#ga75c78a796120b8fc7372bfb7518168fc", null ],
+    [ "wiced_ble_cs_create_config", "group__wicedbt___channel_sounding.html#ga15f9f72a6564d11b00e0815d0fed0aab", null ],
+    [ "wiced_ble_cs_remove_config", "group__wicedbt___channel_sounding.html#gaf62ff64c96fcfd1ce4a947ffc9f93270", null ],
+    [ "wiced_ble_cs_set_channel_classification", "group__wicedbt___channel_sounding.html#gaf4cdce8483a88a7ab494e32c470303f5", null ],
+    [ "wiced_ble_cs_set_procedure_params", "group__wicedbt___channel_sounding.html#gae903324548894269a3ae65184ac70f1e", null ],
+    [ "wiced_ble_cs_set_procedure_enable", "group__wicedbt___channel_sounding.html#ga8b1aa038c80902e9ec7b707194efd2ff", null ],
+    [ "wiced_ble_cs_get_event_str", "group__wicedbt___channel_sounding.html#gad7d1851073ba363f5d5329030b168314", null ],
+    [ "wiced_ble_cs_read_subevent_result_event_hdr_from_stream", "group__wicedbt___channel_sounding.html#ga2cb99778ce3d4bc70c5b542eb5f817d2", null ],
+    [ "wiced_ble_cs_read_subevent_cont_result_event_hdr_from_stream", "group__wicedbt___channel_sounding.html#gae16d8639e63a051730482ad001c68c2f", null ]
+];
