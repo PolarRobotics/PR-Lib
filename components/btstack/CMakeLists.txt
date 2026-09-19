@@ -1,14 +1,14 @@
 # ESP-IDF wrapper for bluepad32
-set(BLUEPAD32_UP ${CMAKE_CURRENT_LIST_DIR}/upstream)
+set(BTSTACK_UP ${CMAKE_CURRENT_LIST_DIR}/upstream)
 
 # Sources are under src/
-file(GLOB BLUEPAD32_SRCS
-     "${BLUEPAD32_UP}/*.c"
-     "${BLUEPAD32_UP}/*.cpp")
+file(GLOB BTSTACK_SRCS
+     "${BTSTACK_UP}/*.c"
+     "${BTSTACK_UP}/*.cpp")
 
 idf_component_register(
-  SRCS         ${BLUEPAD32_SRCS}
-  INCLUDE_DIRS "${BLUEPAD32_UP}/"
+  SRCS         ${BTSTACK_SRCS}
+  INCLUDE_DIRS "${BTSTACK_UP}/"
   REQUIRES
     btstack
 )

@@ -1,0 +1,28 @@
+name: cmd_system_4.4
+version: "*"
+description: "Command System 4.4 Library"
+
+dependencies:
+  idf:
+    version: ">=4.4.0"
+  # If your component depends on Arduino
+
+targets:
+  - esp32
+  - esp32s2
+  - esp32s3
+  - esp32c3
+  - esp32c6
+  - esp32h2
+
+
+    
+files:
+  exclude:
+    - "*.md"
+    - "examples/**"
+    - "test/**"
+    - "libs/*/examples/**"
+    - "libs/*/.git/**"
+    - "libs/*/test/**"
+    - "libs/*/tests/**"
